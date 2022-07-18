@@ -1,0 +1,92 @@
+
+<MainScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 20
+        padding: 20
+
+        Label:
+            id: problem_display
+            text: 'x + y + 2 = a + b + 35'
+            canvas:
+                Color:
+                    rgba: (.5,.5,.5,.5)
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+        BoxLayout:
+            orientation: 'horizontal'
+            spacing: 20
+
+            ToggleButton:
+                id: x_result_display
+                group: 'variables'
+                text: 'x = ?'
+            ToggleButton:
+                id: y_result_display
+                group: 'variables'
+                text: 'y = ?'
+            ToggleButton:
+                id: a_result_display
+                group: 'variables'
+                text: 'a = ?'
+            ToggleButton:
+                id: b_result_display
+                group: 'variables'
+                text: 'b = ?'
+
+
+        GridLayout:
+            cols: 4
+            spacing: 20
+
+            col_default_width: 60
+            row_default_height: 60
+
+            Button:
+                text: 'Clr'
+            Button:
+                text: 'Del'
+            Button:
+                text: '+/-'
+            Button:
+                text: '/'
+
+            Button:
+                text: '7'
+            Button:
+                text: '8'
+            Button:
+                text: '9'
+            Button:
+                text: 'x'
+
+
+            Button:
+                text: '4'
+            Button:
+                text: '5'
+            Button:
+                text: '6'
+            Button:
+                text: '-'
+
+
+            Button:
+                text: '1'
+            Button:
+                text: '2'
+            Button:
+                text: '3'
+            Button:
+                text: '+'
+
+            Button:
+                text: '?'
+            Button:
+                text: '0'
+            Button:
+                text: '.'
+            Button:
+                text: '='
